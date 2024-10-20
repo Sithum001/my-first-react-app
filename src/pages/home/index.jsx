@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ButtonComponent from "../../components/button/button";
+import LoginPage from "../login";
 
 const HomePage = () => {
   const [number, setNumber] = useState(0);
@@ -21,7 +22,7 @@ const clickNum2 =() =>{
           <ButtonComponent onClickNum={clickNum2} label={"decrease"} />
         </div>
       </div>
-      
+      <LoginPage/>
     </>
   );
 };
